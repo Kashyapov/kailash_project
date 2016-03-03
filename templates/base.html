@@ -1,0 +1,89 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Паломничество на Кайлас. Ритрит на озере Манасаровар</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS Files comes here -->
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "css/style.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "css/animate.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "css/owl.carousel.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "css/owl.theme.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "css/nivo-lightbox.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "css/nivo_lightbox_themes/default/default.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "css/colors/green.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "css/responsive.css" %}" rel="stylesheet" media="screen">
+
+    <!-- Google fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic"
+          rel="stylesheet" type="text/css">
+
+    <!-- Modernizer and IE specyfic files -->
+    <script src="{% static "js/modernizr.custom.js" %}"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="{% static "js/html5shiv.js" %}"></script>
+      <script src="{% static "js/respond.min.js" %}"></script>
+    <![endif]-->
+
+    <!--[if IE 9]>
+     <link href="{% static "css/ie.css" %}" rel="stylesheet" media="screen">
+    <![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+     <script src="{% static "js/html5shiv.js" %}"></script>
+     <script src="{% static "js/respond.min.js" %}"></script>
+     <![endif]-->
+
+    <!--[if IE 9]>
+     <link href="{% static "css/ie.css" %}" rel="stylesheet" media="screen">
+     <![endif]-->
+
+</head>
+<body>
+
+{% include "nav-bar.html" %}
+
+{% block context %}
+
+{% endblock context %}
+
+<!-- JavaScript plugins comes here -->
+<script src="{% static "js/jquery-2.0.3.min.js" %}"></script>
+<script src="{% static "js/jquery.easing.min.js" %}"></script>
+<script src="{% static "js/jquery.scrollTo.js" %}"></script>
+<script src="{% static "js/jquery.form.js" %}"></script>
+<script src="{% static "js/bootstrap.js" %}"></script>
+<script src="{% static "js/main.js" %}"></script>
+<script src="{% static "js/retina.js" %}"></script>
+<script src="{% static "js/waypoints.min.js" %}"></script>
+<script src="{% static "js/owl.carousel.min.js" %}"></script>
+<script src="{% static "js/nivo-lightbox.min.js" %}"></script>
+<script type="text/javascript">
+    $('document').ready(function () {
+        $('#subscribe-form').ajaxForm({
+            target: '#preview',
+            success: function () {
+                $('#subscribe-form').slideUp('slow');
+                $('#preview').css({"opacity": "1"});
+            }
+        });
+    });
+</script>
+
+<!-- ADD Switcher -->
+
+
+<!-- Switcher Only -->
+{#<link rel="stylesheet" id="switcher-css" type="text/css" href="{% static "styleswitcher/switcher.css" media="all" />#}
+<link href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800"
+      rel="stylesheet" type="text/css">
+<!-- END Switcher Styles -->
+
+</body>
+</html>
