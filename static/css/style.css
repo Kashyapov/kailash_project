@@ -1,124 +1,3 @@
-/*######################################*/
-/*RESET ################################*/
-/*######################################*/
-
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,hr,th,td {
-	margin:0; 
-	padding:0;
-}
-
-
-
-
-
-/*######################################*/
-/*TYPOGRAPHY ###########################*/
-/*######################################*/
-
-@font-face{ 
-	font-family: 'Lane';
-	src: url('fonts/LANENAR_-webfont.eot');
-	src: url('fonts/LANENAR_-webfont.eot@iefix') format('eot'),
-	     url('fonts/LANENAR_-webfont.woff') format('woff'),
-	     url('fonts/LANENAR_-webfont.ttf') format('truetype'),
-	     url('fonts/LANENAR_-webfont.svg') format('svg');
-}
-
-html {
-	-webkit-font-smoothing: antialiased;
-}
-
-html {
-	font-size: 100%;
-}
-
-p {
-    font-size: 1rem;
-	line-height: 1.625em;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-}
-
-a {
-    font-size: 1em;
-	line-height: 1.625rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    text-decoration:none;
-}
-
-a:hover {
-    text-decoration:none;
-}
-
-h1,h2,h3 {
-    font-family: 'Lane', sans-serif;
-    font-weight: normal;
-}
-
-h1 {
-    font-size:3rem;
-    line-height:3.5rem;
-}
-
-h2 {
-    font-size:2.5rem;
-    line-height:3.6rem;
-    margin-bottom:1.7rem;
-}
-
-h3 {
-    font-size:1.7rem;
-    line-height:2.25rem;
-}
-
-h4 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size:1rem;
-    line-height: 1.625rem;
-    font-weight:600;
-}
-
-h5 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size:0.8125rem;
-    line-height: 1rem;
-    font-weight:300;
-    color:white;
-    text-transform:uppercase;
-}
-
-h6 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size:0.75rem;
-    line-height: 2.5rem;
-    font-weight:600;
-}
-
-ul {
-    list-style:none
-}
-
-li {
-    margin-top:1.625em;
-}
-
-li a {
-    display:inline;
-}
-
-hr {
-    margin-top:6rem;
-    margin-bottom:6rem;
-}
-
-
-
-
-
-/*######################################*/
-/*BUTTONS ############################*/
-/*######################################*/
 
 .cta1 {
     display:inline-block;
@@ -366,7 +245,6 @@ hr {
     padding-top:6.5rem;
     padding-bottom:6.5rem;
     background:white;
-    position:relative;
     display:block;
     z-index:20;
     text-align:center;
@@ -385,7 +263,7 @@ hr {
 
 
 
-#about_intro, #service_1, #service_2, #service_3  {opacity:0;}
+/*#about_intro, #service_1, #service_2, #service_3  {opacity:0;} */
 
 
 /*######################################*/
@@ -515,7 +393,7 @@ hr {
 }
 
 
-#features_1_content, #features1a_image, #features1b_image {opacity:0;}
+/*#features_1_content, #features1a_image, #features1b_image {opacity:0;} */
 
 
 /*######################################*/
@@ -538,7 +416,7 @@ hr {
 }
 
 
-#features_2_content, #features2a_image, #features2b_image {opacity:0;}
+/*#features_2_content, #features2a_image, #features2b_image {opacity:0;} */
 
 
 
@@ -581,7 +459,7 @@ hr {
 }
 
 
-#features_3_intro, #features_3_content_left, #features_3_content_right, #features_3_content_center {opacity:0;}
+/*#features_3_intro, #features_3_content_left, #features_3_content_right, #features_3_content_center {opacity:0;} */
 
 
 
@@ -627,7 +505,7 @@ hr {
 
 
 
-#gallery_intro, #gallery_carousel {opacity:0;}
+/*#gallery_intro, #gallery_carousel {opacity:0;} */
 
 
 /*######################################*/
@@ -667,7 +545,7 @@ hr {
     font-weight: normal;
 }
 
-#dev_blog_intro, #dev_blog_content {opacity:0;}
+/*#dev_blog_intro, #dev_blog_content {opacity:0;} */
 
 /*######################################*/
 /*NEWSLETTER ###########################*/
@@ -1071,9 +949,4 @@ iframe {
 
 .comment-submit:hover {
     opacity:0.8
-}
-
-.navbar-default {
-    background-color: #0022cc;
-    opacity: 50;
 }

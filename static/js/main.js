@@ -10,7 +10,7 @@
         App.ScrollToContact();
         App.ScrollBack();
         App.Preloader();
-        App.Animations();
+        //App.Animations();
         App.Carousel();
         App.Lightbox();
     },
@@ -29,7 +29,7 @@
     * Scroll To Contact
     */
     ScrollToContact: function() {
-    $('#button_more').click(function () { $.scrollTo('#footer',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
+    $('#button_more').click(function () { $.scrollTo('.footer_last',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     $('#button_more1').click(function () { $.scrollTo('#about',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     $('#about_arrow_back').click(function () { $.scrollTo('0px',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
     $('#about_arrow_next').click(function () { $.scrollTo('#features_1',1000,{easing:'easeInOutExpo',offset:0,'axis':'y'});});
@@ -74,7 +74,6 @@
 
     /**
     * Animations
-    */
     Animations: function() {
         $('#about').waypoint(function() {
             setTimeout(function(){$('#about_intro').addClass('animated fadeInDown')},0);
@@ -116,6 +115,7 @@
         }, { offset: '50%' });
 
     },
+    */
 
 
     /**
