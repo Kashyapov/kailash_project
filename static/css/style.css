@@ -193,7 +193,10 @@
     position:relative;
     z-index:0;
     overflow:hidden;
-    background-image: url(/media/images/cropped-20140908_Kailash14_767-1.jpg);
+    background-image: url(/media/images/kailas.jpg);
+    background-position:  0px 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #home_image {
@@ -464,15 +467,15 @@
 
 
 /*######################################*/
-/*GALLERY ##############################*/
+/*GUIDE ##############################*/
 /*######################################*/
 
-#gallery {
+#guide {
     margin:0px;
     padding-top:6.5rem;
     padding-bottom:6.5rem;
     background:white;
-    position:relative;
+    /*position:relative;*/
     display:block;
     z-index:100;
     text-align:center;
@@ -949,4 +952,9 @@ iframe {
 
 .comment-submit:hover {
     opacity:0.8
+}
+
+.foto {
+    width: 320px;
+    border-radius: 47px;
 }
